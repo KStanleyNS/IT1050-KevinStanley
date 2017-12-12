@@ -6,38 +6,14 @@ using System.Threading.Tasks;
 
 namespace Lab09
 {
-	class MyMath
+	class Program
 	{
 		static void Main(string[] args)
-		{ }
-			
-		public int operand1;
-		public int operand2;
-		public int result;
-
-		public int Add(int i, int b)
 		{
-			operand1 = i;
-			operand2 = b;
-			result = i + b;
-			return result;
-		}
+			MyMath MyMath = new MyMath();
 
-		public void int Multiply(int i, int b)
-		{
-			return i * b;
-		}
+			MyMath.Result;
 
-		public void int Divide(int i, int b)
-		{
-			return i / b;
 		}
-
-		public void int Subtract(int i, int b)
-		{
-			return i - b;
-		}
-
 	}
-}
 }
