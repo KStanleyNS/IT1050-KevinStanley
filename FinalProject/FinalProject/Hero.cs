@@ -16,7 +16,7 @@ namespace FinalProject
 
 		public string Power;
 		public int PowerLevel;
-		private int increaseAmouunt;
+		private int increaseAmount;
 		public double Health;
 		public string Weapons;
 		public int Age;
@@ -60,27 +60,28 @@ namespace FinalProject
 		}
 
 
-		public void FightCrime(string address)
-		
+		public void FightCrime(string address) 
+
 		{
-			// TODO: Problem 2 - Output "Successfully fought crime at address" if PowerLevel > 49
+			if (this.PowerLevel > 49)
+			{
+				Console.WriteLine("Successfully Fought Crime at" + address);
+			}
+			
 		}
 
 		private bool Investigate()
 		{
-
-			
 			bool returnValue = true;
-			return returnValue;
-
-			if (returnValue = true)
+			if (returnValue == true)
 			{
 				Console.WriteLine("Investigated Crime");
 			}
 			else
 			{
-				Console.WriteLine("Did not investigate Crime");
+				Console.WriteLine("Did not Investigate Crime");
 			}
+			return returnValue;
 		}
 
 		public void Fly()
@@ -116,7 +117,7 @@ namespace FinalProject
 		public int ChargePower(int powerlevel, int increaseamount)
 		{
 			this.PowerLevel = +1;
-			increaseAmouunt = +1;
+			increaseAmount = +1;
 			return PowerLevel;
 		}
 
